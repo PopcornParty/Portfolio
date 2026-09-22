@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popcorn Party | Developer & Creator</title>
+  <meta name="description" content="Popcorn Party — self-taught developer, creator and community builder working with websites, apps, games, Discord, automation, AI and more.">
+  <meta name="theme-color" content="#050507">
+  <meta name="color-scheme" content="dark">
+  <meta name="author" content="Popcorn Party">
+  <meta name="robots" content="index,follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Popcorn Party | Developer & Creator">
+  <meta property="og:description" content="Popcorn Party — self-taught developer, creator and community builder working with websites, apps, games, Discord, automation, AI and more.">
+  <meta property="og:site_name" content="Popcorn Party">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Popcorn Party | Developer & Creator">
+  <meta name="twitter:description" content="Popcorn Party — self-taught developer, creator and community builder working with websites, apps, games, Discord, automation, AI and more.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="loader" class="loader" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <div class="loader-mark" aria-hidden="true">PP</div>
+      <p class="loader-name">Popcorn Party</p>
+    </div>
+  </div>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo" id="logo" aria-label="Popcorn Party home">
+        <span class="logo-mark">PP</span>
+        <span class="logo-text">Popcorn Party</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#what-i-do">What I Do</a>
+        <a href="#minecraft">Minecraft</a>
+        <a href="#communities">Communities</a>
+        <a href="#stats">Stats</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#what-i-do">What I Do</a>
+      <a href="#minecraft">Minecraft</a>
+      <a href="#communities">Communities</a>
+      <a href="#stats">Stats</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="status-badge reveal">
+          <span class="status-dot" aria-hidden="true"></span>
+          Available to help — depending on the project
+        </div>
+        <h1 class="hero-title reveal">Popcorn Party</h1>
+        <p class="hero-role reveal">Developer • Creator • Community Builder</p>
+        <p class="hero-lead reveal">
+          I build websites, apps, games, Discord projects and automation while creating content and experimenting with new technology.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary magnetic" href="#about">About Me</a>
+          <a class="btn btn-ghost magnetic" href="#contact">Contact Me</a>
+          <button class="btn btn-discord magnetic" type="button" data-copy-discord data-copy-message="Copied!">
+            Discord: popcorn_party1
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <p class="eyebrow">Who I am</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>I’m Popcorn Party, a self-taught developer and creator interested in games, Discord, websites, AI, coding and building things online.</p>
+          <p>I work on a mix of software, websites, apps, games, Discord communities, automation and creative projects. I also create content on YouTube and Instagram.</p>
+          <p>I enjoy figuring out how things work, experimenting with new ideas and turning concepts into something people can actually use.</p>
+        </div>
+        <aside class="identity-card reveal" aria-label="Identity">
+          <p class="identity-brand">POPcorn party</p>
+          <ul class="identity-list">
+            <li>Developer</li>
+            <li>Creator</li>
+            <li>Community Builder</li>
+            <li>Gamer</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="what-i-do">
+      <div class="section-head reveal">
+        <p class="eyebrow">Work & experiments</p>
+        <h2>What I Do</h2>
+      </div>
+      <div class="card-grid">
+        <article class="glow-card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 8 4 12l4 4M16 8l4 4-4 4M13 6l-2 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Coding</h3>
+          <p>Software, tools and other coding projects.</p>
+        </article>
+        <article class="glow-card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4zM4 10h16" stroke="currentColor" stroke-width="1.6"/><circle cx="7" cy="8" r="0.7" fill="currentColor"/><circle cx="9.2" cy="8" r="0.7" fill="currentColor"/></svg>
+          </div>
+          <h3>Websites</h3>
+          <p>Modern websites and interactive web experiences.</p>
+        </article>
+        <article class="glow-card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="8" y="3.5" width="8" height="17" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M11 18.5h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Apps</h3>
+          <p>Building useful applications and experimenting with different ideas.</p>
+        </article>
+        <article class="glow-card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="7" height="8" rx="1.4" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="8" width="7" height="8" rx="1.4" stroke="currentColor" stroke-width="1.6"/><path d="M10 12h4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Game Development</h3>
+          <p>Developing games and experimenting with game mechanics.</p>
+        </article>
+        <article class="glow-card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 15c-2.5 0-4-1.6-4-3.6C4 8.7 6.2 7 9 7c1.6 0 2.8.6 3.6 1.5C13.6 7.6 15.2 7 16.8 7 19.4 7 21 8.8 21 11.4c0 2-1.4 3.6-4 3.6h-9Z" stroke="currentColor" stroke-width="1.6"/><circle cx="9.2" cy="11.2" r="0.8" fill="currentColor"/><circle cx="14.8" cy="11.2" r="0.8" fill="currentColor"/></svg>
+          </div>
+          <h3>Discord</h3>
+          <p>Discord bots, servers, communities and server systems.</p>
+        </article>
+        <article class="glow-card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 16V8m0 8 3-3m-3 3-3-3M19 8v8m0-8-3 3m3-3 3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Automation</h3>
+          <p>Automating repetitive tasks and building systems that do things automatically.</p>
+        </article>
+        <article class="glow-card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 8.5v3.2l2.2 1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>AI Projects</h3>
+          <p>Experimenting with AI-powered tools and projects.</p>
+        </article>
+        <article class="glow-card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m10 10 5 2-5 2v-4Z" fill="currentColor"/></svg>
+          </div>
+          <h3>Content Creation</h3>
+          <p>YouTube and Instagram content.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <p class="eyebrow">Toolkit & curiosity</p>
+        <h2>Skills & Interests</h2>
+      </div>
+      <div class="tags reveal" role="list">
+        <span role="listitem">Coding</span>
+        <span role="listitem">Web Development</span>
+        <span role="listitem">App Development</span>
+        <span role="listitem">Game Development</span>
+        <span role="listitem">Discord</span>
+        <span role="listitem">Discord Bots</span>
+        <span role="listitem">Automation</span>
+        <span role="listitem">AI</span>
+        <span role="listitem">Minecraft Bedrock</span>
+        <span role="listitem">PvP</span>
+        <span role="listitem">Redstone</span>
+        <span role="listitem">YouTube</span>
+        <span role="listitem">Instagram</span>
+        <span role="listitem">Communities</span>
+      </div>
+    </section>
+
+    <section class="section" id="minecraft">
+      <div class="section-head reveal">
+        <p class="eyebrow">Bedrock mechanics</p>
+        <h2>Minecraft</h2>
+      </div>
+      <p class="section-lead reveal">Minecraft isn’t just a game I play — I enjoy experimenting with its mechanics and building complicated systems.</p>
+      <div class="mc-grid">
+        <article class="glow-card mc-card reveal">
+          <div class="mc-chip">Bedrock</div>
+          <h3>PvP</h3>
+          <p>Experienced with Minecraft Bedrock PvP.</p>
+        </article>
+        <article class="glow-card mc-card reveal">
+          <div class="mc-chip">Systems</div>
+          <h3>Redstone</h3>
+          <p>Experienced with Redstone builds and complicated Redstone systems.</p>
+        </article>
+        <article class="glow-card mc-card reveal">
+          <div class="mc-chip">Redstone</div>
+          <h3>Orbital Strike Cannons</h3>
+          <p>Experienced with creating orbital strike cannon-style Redstone systems on Minecraft Bedrock.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="communities">
+      <div class="section-head reveal">
+        <p class="eyebrow">Discord</p>
+        <h2>Communities</h2>
+      </div>
+      <p class="section-lead reveal">I’m involved in building, helping and managing online communities, particularly through Discord.</p>
+      <div class="community-grid" id="community-grid"></div>
+    </section>
+
+    <section class="section" id="stats">
+      <div class="section-head reveal">
+        <p class="eyebrow">Alive, not inflated</p>
+        <h2>The Numbers</h2>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card reveal">
+          <p class="stat-label">Website Visits</p>
+          <p class="stat-value" id="visit-count">—</p>
+          <p class="stat-note" id="visit-note">Loading visit count…</p>
+        </article>
+        <article class="stat-card reveal">
+          <p class="stat-label">Focus</p>
+          <p class="stat-phrase">Many ideas</p>
+        </article>
+        <article class="stat-card reveal">
+          <p class="stat-label">Output</p>
+          <p class="stat-phrase">Lots of projects</p>
+        </article>
+        <article class="stat-card reveal">
+          <p class="stat-label">Mindset</p>
+          <p class="stat-phrase">Constantly learning</p>
+        </article>
+        <article class="stat-card reveal">
+          <p class="stat-label">Default mode</p>
+          <p class="stat-phrase">Always experimenting</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section availability" id="availability">
+      <div class="availability-card reveal">
+        <p class="eyebrow">Availability</p>
+        <h2>Have Something Interesting?</h2>
+        <p>I’m available to help with projects depending on what the project is.</p>
+        <p>If you have an idea, community, game, website, Discord project or something completely different, feel free to get in touch.</p>
+        <button class="btn btn-primary magnetic" type="button" data-copy-discord>
+          Contact Me on Discord
+        </button>
+        <p class="discord-display">
+          <span>Discord</span>
+          <button type="button" class="username-btn" data-copy-discord>popcorn_party1</button>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-head reveal">
+        <p class="eyebrow">Socials</p>
+        <h2>Find Me Online</h2>
+      </div>
+      <div class="social-grid">
+        <article class="glow-card social-card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 8.2s-.2-1.5-.8-2.1c-.8-.8-1.6-.8-2-.9C16.6 5 12 5 12 5s-4.6 0-7.2.2c-.4 0-1.2.1-2 .9C2.2 6.7 2 8.2 2 8.2S1.8 10 1.8 11.7v1.6c0 1.8.2 3.5.2 3.5s.2 1.5.8 2.1c.8.8 1.8.8 2.3.9 1.6.1 6.9.2 6.9.2s4.6 0 7.2-.2c.4 0 1.2-.1 2-.9.6-.6.8-2.1.8-2.1s.2-1.7.2-3.5v-1.6c0-1.7-.2-3.5-.2-3.5ZM10 14.6V8.8l5.2 2.9L10 14.6Z" fill="currentColor"/></svg>
+          </div>
+          <h3>YouTube</h3>
+          <p id="youtube-label">Popcorn Party</p>
+          <a class="btn btn-ghost" id="youtube-link" href="#" rel="noopener noreferrer">Open YouTube</a>
+        </article>
+        <article class="glow-card social-card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.6"/><circle cx="16.7" cy="7.3" r="0.8" fill="currentColor"/></svg>
+          </div>
+          <h3>Instagram</h3>
+          <p id="instagram-label">Instagram</p>
+          <a class="btn btn-ghost" id="instagram-link" href="#" rel="noopener noreferrer">Open Instagram</a>
+        </article>
+        <article class="glow-card social-card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 15c-2.5 0-4-1.6-4-3.6C4 8.7 6.2 7 9 7c1.6 0 2.8.6 3.6 1.5C13.6 7.6 15.2 7 16.8 7 19.4 7 21 8.8 21 11.4c0 2-1.4 3.6-4 3.6h-9Z" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Discord</h3>
+          <p>popcorn_party1</p>
+          <button class="btn btn-ghost" type="button" data-copy-discord>Copy username</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">Popcorn Party</p>
+        <p class="footer-tag">Developer • Creator • Community Builder</p>
+        <p class="footer-discord">Discord: <button type="button" class="username-btn" data-copy-discord>popcorn_party1</button></p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#what-i-do">What I Do</a>
+        <a href="#minecraft">Minecraft</a>
+        <a href="#communities">Communities</a>
+        <a href="#stats">Stats</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <p class="footer-note">Built by Popcorn Party</p>
+  </footer>
+
+  <div class="egg-layer" id="egg-layer" aria-hidden="true"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
