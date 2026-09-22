@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats | Popcorn Party</title>
+  <meta name="description" content="Website visits and how Popcorn Party works.">
+  <meta name="theme-color" content="#050507">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="stats">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="loader" class="loader" role="status" aria-live="polite"><div class="loader-inner"><div class="loader-mark" aria-hidden="true">PP</div><p class="loader-name">Popcorn Party</p></div></div>
+  <div class="ambient" aria-hidden="true"><div class="blob blob-a"></div><div class="blob blob-b"></div><div class="blob blob-c"></div><div class="grid-overlay"></div></div>
+  <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <header class="nav" id="nav"><div class="nav-inner"><a href="index.html" class="logo" id="logo" aria-label="Popcorn Party home"><span class="logo-mark">PP</span><span class="logo-text">Popcorn Party</span></a><nav class="nav-links" aria-label="Primary"><a href="index.html">Home</a><a href="about.html">About</a><a href="what-i-do.html">What I Do</a><a href="minecraft.html">Minecraft</a><a href="communities.html">Communities</a><a href="stats.html">Stats</a><a href="contact.html">Contact</a></nav><button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button></div><div class="mobile-menu" id="mobile-menu" hidden><a href="index.html">Home</a><a href="about.html">About</a><a href="what-i-do.html">What I Do</a><a href="minecraft.html">Minecraft</a><a href="communities.html">Communities</a><a href="stats.html">Stats</a><a href="contact.html">Contact</a></div></header>
+  <main id="main">
+    <section class="hero page-hero"><div class="section-head reveal"><p class="eyebrow">Alive, not inflated</p><h1 class="hero-title">The Numbers</h1></div></section>
+    <section class="section" style="padding-top:12px"><div class="stats-grid"><article class="stat-card reveal"><p class="stat-label">Website Visits</p><p class="stat-value" id="visit-count">—</p><p class="stat-note" id="visit-note">Loading visit count…</p></article><article class="stat-card reveal"><p class="stat-label">Focus</p><p class="stat-phrase">Many ideas</p></article><article class="stat-card reveal"><p class="stat-label">Output</p><p class="stat-phrase">Lots of projects</p></article><article class="stat-card reveal"><p class="stat-label">Mindset</p><p class="stat-phrase">Constantly learning</p></article><article class="stat-card reveal"><p class="stat-label">Default mode</p><p class="stat-phrase">Always experimenting</p></article></div></section>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><p class="footer-brand">Popcorn Party</p><p class="footer-tag">Developer • Creator • Community Builder</p><p class="footer-discord">Discord: <button type="button" class="username-btn" data-copy-discord>popcorn_party1</button></p></div><nav class="footer-links" aria-label="Footer"><a href="index.html">Home</a><a href="about.html">About</a><a href="what-i-do.html">What I Do</a><a href="minecraft.html">Minecraft</a><a href="communities.html">Communities</a><a href="stats.html">Stats</a><a href="contact.html">Contact</a></nav></div><p class="footer-note">Built by Popcorn Party</p></footer>
+  <div class="egg-layer" id="egg-layer" aria-hidden="true"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body></html>
