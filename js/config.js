@@ -5,13 +5,13 @@
 
 const SITE = {
   name: "Popcorn Party",
-  shortName: "PP",
+  shortName: "Popcorn",
   tagline: "Developer • Creator • Community Builder",
   discordUsername: "popcorn_party1",
 
   // Paste your real channel URLs here when you have them.
-  youtubeUrl: "PASTE_YOUTUBE_URL_HERE",
-  instagramUrl: "PASTE_INSTAGRAM_URL_HERE",
+  youtubeUrl: "https://youtube.com/@popcorn_party1?si=F_LOqwdQSwE4uVtP",
+  instagramUrl: "https://www.instagram.com/popcorn_partyig?stkn=MTEzcW9rdDJjbm1ueg%3D%3D&utm_source=qr",
 
   youtubeLabel: "Popcorn Party",
   instagramLabel: "Instagram",
